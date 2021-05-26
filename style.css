@@ -1,0 +1,72 @@
+body {
+    padding: 5vw 20vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.timer {
+    color: black;
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 1% 0;
+    margin: 5%;
+    border: 5px solid #6b6d6b;
+    border-radius: 2vw;
+}
+
+.buttons{
+    display: grid;
+    grid-template: auto /1fr 1fr 1fr;
+    margin: 3%;
+}
+
+button {
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1rem;
+}
+
+.start {
+    background-color: #13cc13;
+    color: white;
+}
+
+.start:disabled {
+    background-color: white;
+    color: #13cc13;
+    border: 2px solid #13cc13;
+}
+
+.lap {
+    background-color: #c0cc13;
+    color: white;
+}
+
+.reset {
+    background-color: #F44C28;
+    color: white;
+    
+}
+
+.reset:disabled {
+    background-color: white;
+    color: #F44C28;
+    border: 2px solid #F44C28;
+}
+
+fieldset {
+    border-radius: 2vw;
+    margin: 1vw;
+}
+
+strong {
+    font-size: larger;
+}
+
+@media(max-width:441px) {
+    .buttons {
+        grid-template: 1fr 1fr 1fr/auto;
+    }
+}
